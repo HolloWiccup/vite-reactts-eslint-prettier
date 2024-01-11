@@ -30,7 +30,7 @@ module.exports = {
   ],
   rules: {
     'object-curly-spacing': ["error", "always"],
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    'prettier/prettier': "off",
     'react/react-in-jsx-scope': 'off',
     'react-refresh/only-export-components': [
       'warn',

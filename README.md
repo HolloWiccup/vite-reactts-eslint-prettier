@@ -5,16 +5,16 @@ npm install create-vite
 npm create vite@latest . -- --template react-ts
 npm install --save-dev eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-config-prettier eslint-plugin-prettier prettier
 
-Create a Prettier configuration file .prettierrc.cjs in your project root
+Create a Prettier configuration file .prettierrc.json in your project root
 
 ```js
-module.exports = {
-  singleQuote: true,
-  semi: true,
-  useTabs: false,
-  tabWidth: 2,
-  trailingComma: 'all',
-};
+{
+  "singleQuote": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": true,
+  "trailingComma": "all"
+}
 ```
 edit configuration file .eslintrc.cjs 
 
@@ -51,8 +51,8 @@ module.exports = {
   ],
   rules: {
     'object-curly-spacing': ["error", "always"],
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': "off",
+    'react/react-in-jsx-scope': "off",
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
